@@ -31,6 +31,11 @@ library(ggplot2)
 library(tm)
 library(memoise)
 
+conflict_prefer("box", "shinydashboardPlus")
+conflict_prefer("dataTableOutput", "DT")
+conflict_prefer("renderDataTable", "DT")
+conflict_prefer("filter", "dplyr")
+
 # color palettes
 library("RColorBrewer")
 
@@ -48,8 +53,8 @@ library(ggplot2)
 # I put in "dirmapas" the route where are all the ..
 #..required files for the app
 
-dirmapas <- "E:/Consejo-Nacional-de-Educacion/Shinys2020/webweb"
-setwd(dirmapas)
+#dirmapas <- "E:/Consejo-Nacional-de-Educacion/Shinys2020/webweb"
+#setwd(dirmapas)
 
 #If we want to know our working directory, we write: getwd()
 
